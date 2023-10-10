@@ -325,3 +325,7 @@ section .container {
 .muted {
   color: palevioletred;
 }
+
+.cert {
+  font-family: cursive;
+}

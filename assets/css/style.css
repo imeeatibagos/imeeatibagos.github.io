@@ -20,7 +20,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #7eaff0 url("../img/h.png") top right no-repeat;
+  background: #7eaff0 url("../img/imee.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -83,7 +83,7 @@ h6 {
   right: 10px;
   bottom: 0;
   height: 1px;
-  background-color: #2bc5ec;
+  background-color: #69ca8696;
 }
 
 .filters a.active {
@@ -97,7 +97,7 @@ h6 {
   right: 10px;
   bottom: 0;
   height: 1px;
-  background-color: #ec24ac;
+  background-color: #2dbd40;
 }
 
 .item {
@@ -369,7 +369,7 @@ h6 {
 --------------------------------------------------------------*/
 /* Custom Navmenu */
 .custom-navmenu {
-  background: #65bcf6;
+  background: #030d14;
 }
 
 .custom-navmenu .custom-menu,
@@ -381,12 +381,12 @@ h6 {
 
 .custom-navmenu .custom-menu li {
   margin-bottom: 0;
-  font-size: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-family: fantasy;
 }
 
 .custom-navmenu .custom-menu li a {
-  color: #0d0d0d;
+  color: #0e8b2d;
   padding: 10px 0 !important;
 }
 
@@ -403,7 +403,7 @@ h6 {
 
   content: "";
   height: 4px;
-  border-bottom: 3px solid #f934b1;
+  border-bottom: 2px solid #6e6e6e;
   transition: width 0.4s;
 }
 .custom-navmenu .custom-menu li.active a:hover {
@@ -458,7 +458,7 @@ h6 {
   width: 100%;
   height: 2px;
   display: block;
-  background: #fff;
+  background: #0bf129;
   border-radius: 2px;
   position: absolute;
   opacity: 1;
@@ -537,19 +537,21 @@ h6 {
   bottom: 8%;
 }
 .header h1 {
-  font-size: 60px;
+  font-size: 70px;
   padding: 5;
   text-align: center;
   line-height: 50px;
   margin-right: 8px;
-  margin-top: 150px;
+  margin-top: 400px;
   color: transparent;
   -webkit-text-stroke: 1px 3fff;
   background: url("../img/tape.png");
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
 @keyframes back {
   100% {
     background-position: 2000px 0;
@@ -558,7 +560,7 @@ h6 {
 
 .header h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
   margin: 15px 0 0 0;
@@ -572,13 +574,19 @@ h6 {
 }
 
 .food {
-  font-size: 50px;
+  font-size: 30px;
   font-family: "Times New Roman", Times, serif;
 }
 .foodie {
-  font-size: 25px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .fooda {
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
+}
+
+.cert {
+  font-family: cursive;
+  color: #18d26e;
 }
