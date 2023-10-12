@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: #7eaff0;
   color: #f3f4f5;
   position: relative;
@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .sec {
@@ -252,7 +252,7 @@ h6 {
   position: -webkit-sticky;
   top: 0;
   font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #e3e7dc;
   /* required */
 }
@@ -302,7 +302,7 @@ h6 {
 }
 
 .frame {
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #fff;
   font-size: 15px;
   text-decoration: none;
@@ -325,58 +325,6 @@ h6 {
   padding-top: 10px;
 }
 
-/* Contact Form */
-.php-email-form .error-message {
-  display: none;
-  color: #fffdfd;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: #0e8b2d;
-  text-align: center;
-  padding: 15px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #fff;
-  animation: animate-loading 1s linear infinite;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -395,17 +343,17 @@ h6 {
 .custom-navmenu .custom-menu li {
   margin-bottom: 0;
   font-size: 25px;
-  font-family: fantasy;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .custom-navmenu .custom-menu li a {
-  color: #0e8b2d;
+  color: #f4f7f4;
   padding: 10px 0 !important;
 }
 
 .custom-navmenu .custom-menu li a:hover {
   text-decoration: none;
-  position: relative;
+  font-size: 30px;
 }
 
 .custom-navmenu .custom-menu li.active a {
@@ -416,7 +364,7 @@ h6 {
   content: "";
   height: 4px;
   color: #e3e7dc;
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .custom-navmenu .custom-menu li.active a:hover {
   width: 50%;
@@ -538,7 +486,7 @@ h6 {
 .footer {
   padding: 0 0 4rem 0;
   font-size: 12px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .footer a {
@@ -551,12 +499,12 @@ h6 {
   bottom: 8%;
 }
 .header h1 {
-  font-size: 70px;
+  font-size: 50px;
   padding: 5;
   text-align: center;
   line-height: 50px;
   margin-right: 8px;
-  margin-top: 400px;
+  margin-top: 300px;
   color: transparent;
   -webkit-text-stroke: 1px 3fff;
   background: url("../img/tape.png");
@@ -571,14 +519,14 @@ h6 {
     background-position: 2000px 0;
   }
 }
-
+/* Home */
 .header h2 {
   text-align: center;
   font-size: 25px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
   margin: 15px 0 0 0;
-  font-family: "Poppins", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .header h2 span {
@@ -586,7 +534,12 @@ h6 {
   border-bottom: 2px solid #18d26e;
   padding-bottom: 6px;
 }
-
+/* End Home */
+/* Icons */
+.icon {
+  width: 2px;
+  height: 2px;
+}
 .food {
   font-size: 30px;
   font-family: cursive;
@@ -594,7 +547,7 @@ h6 {
 }
 .foodie {
   font-size: 18px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .fooda {
   font-size: 20px;
@@ -623,16 +576,105 @@ h6 {
 }
 
 .line {
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
-  color: #0e8b2d;
+  color: #58ee7e;
 }
 
 .att {
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 15px;
 }
 .int {
   font-family: cursive;
   font-size: 15px;
+}
+/* Resume */
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ece2e2;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #34b7a7;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: cursive;
+  color: #1d685f;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #effbf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #34b7a7;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #34b7a7;
+}
+
+.resume {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #58ee7e;
+}
+.first {
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-right: -2px;
+}
+.six {
+  font-size: 14px;
+}
+
+.res {
+  font-size: 50px;
+}
+.abt {
+  font-size: 50px;
+}
+.skill {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.greet {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
