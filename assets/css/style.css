@@ -330,7 +330,7 @@ h6 {
 --------------------------------------------------------------*/
 /* Custom Navmenu */
 .custom-navmenu {
-  background: #030d14;
+  background: #09794e;
 }
 
 .custom-navmenu .custom-menu,
@@ -504,7 +504,7 @@ h6 {
   text-align: center;
   line-height: 50px;
   margin-right: 8px;
-  margin-top: 300px;
+  margin-top: 200px;
   color: transparent;
   -webkit-text-stroke: 1px 3fff;
   background: url("../img/tape.png");
