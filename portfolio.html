@@ -43,131 +43,290 @@
   </head>
 
   <body>
-    <!-- ======= Navbar ======= -->
-    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-      <div class="container py-2 py-md-5">
-        <div class="row mb-5 align-items-center ">
-          <div class="col-md-2">
-            <ul class="custom-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Me</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li class="active"><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 d-none d-md-block mr-auto">
-            </div>
-          </div>
+    <!-- ======= Plain Navbar ======= -->
+    <nav class="plain-navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="portfolio.html" class="nav-link active">Portfolio</a>
         </div>
-      </div>
-    </div>
-
-    <nav class=" ms-3 navbar navbar-light custom-navbar">
-      <div class="container">
-        <a
-          href="#"
-          class="burger"
-          data-bs-toggle="collapse"
-          data-bs-target="#main-navbar"
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
         >
-          <span></span>
-        </a>
+          <i class="bi bi-moon-fill dark-icon"></i>
+          <i class="bi bi-sun-fill light-icon"></i>
+        </button>
       </div>
     </nav>
 
     <main id="main">
-      <!-- ======= Works Section ======= -->
-      <section class="section site-portfolio">
-        <div class="container text-center mt-5">
-          <div class="row mb-5 align-items-center">
-            <div
-              class="col-md-12 col-lg-6 text-start text-lg-end"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div id="filters" class="filters">
-                <a href="#" data-filter="*" class="active">All</a>
-                <a href="#" data-filter=".web">Web</a>
-                <a href="#" data-filter=".certificate">Certificates</a>
-               
-      
+      <!-- Portfolio Hero Section -->
+      <section class="portfolio-hero-section">
+        <div class="container">
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-12 text-center" data-aos="fade-up">
+              <div class="portfolio-header">
+                <div class="section-badge">
+                  <span class="badge-text">Portfolio</span>
+                </div>
+                <h1 class="portfolio-title">
+                  My <span class="title-accent">Creative</span> Works <br />&
+                  <span class="title-accent">Projects</span>
+                </h1>
+                <p class="portfolio-description">
+                  Explore my collection of innovative projects, showcasing
+                  expertise in web development, wireframing, and modern
+                  technologies. Each project represents a journey of learning,
+                  creativity, and technical excellence.
+                </p>
+                <div class="portfolio-stats">
+                  <div class="stat-item">
+                    <h3 class="stat-number">1</h3>
+                    <span class="stat-label">Projects Completed</span>
+                  </div>
+                  <div class="stat-item">
+                    <h3 class="stat-number">3</h3>
+                    <span class="stat-label">Categories</span>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div
-            id="portfolio-grid"
-            class="row no-gutter"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="booktopia.html" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3>Booktopia</h3>
-                  <span>Web</span>
-                </div>
-                <img class="img-fluid" src="assets/img/web1.png" />
-              </a>
-            </div>
-            <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="salon.html" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3>David Salon:Online Booking System</h3>
-                  <span>Web</span>
-                </div>
-                <img class="img-fluid" src="assets/img/david.png" />
-              </a>
-            </div>
-        
-            <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="foodtrends.html" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3>FoodTrends</h3>
-                  <span>Web</span>
-                </div>
-                <img class="img-fluid" src="assets/img/foodtrend.png" />
-              </a>
-            </div>
-            <div class="item certificate col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="certificates.html" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3>SoloLearn Certificates</h3>
-                  <span>Certificate</span>
-                </div>
-                <img class="img-fluid" src="assets/img/solo.png" />
-              </a>
             </div>
           </div>
         </div>
       </section>
-      <!-- End  Works Section -->
 
-      
+      <!-- Enhanced Portfolio Grid Section -->
+      <section class="portfolio-showcase-section">
+        <div class="container">
+          <!-- Filter Navigation -->
+          <div class="row mb-5">
+            <div class="col-12" data-aos="fade-up">
+              <div class="portfolio-filters">
+                <h2 class="filter-title">Explore My Work</h2>
+                <div class="filter-buttons">
+                  <button class="filter-btn active" data-filter="*">
+                    All Projects
+                  </button>
+                  <button class="filter-btn" data-filter=".web">
+                    Web Development
+                  </button>
+                  <button class="filter-btn" data-filter=".certificate">
+                    Certifications
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Grid -->
+          <div
+            class="row portfolio-grid"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- Booktopia Project -->
+            <div class="col-lg-6 col-md-6 mb-4 portfolio-item web">
+              <div class="portfolio-card">
+                <div class="card-image">
+                  <img
+                    src="assets/img/web1.png"
+                    alt="Booktopia Project"
+                    class="img-fluid"
+                  />
+                  <div class="card-overlay">
+                    <div class="overlay-content">
+                      <h4>Booktopia</h4>
+                      <p>Web Application</p>
+                      <div class="project-tags">
+                        <span class="tag">TailwindCSS</span>
+                        <span class="tag">ReactJS</span>
+                        <span class="tag">Bootstrap</span>
+                      </div>
+                    </div>
+                    <div class="overlay-actions">
+                      <a href="booktopia.html" class="action-btn">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="project-category">Web Development</div>
+                  <h3 class="project-title">Booktopia Platform</h3>
+                  <p class="project-description">
+                    A comprehensive book management system featuring
+                    user-friendly interface and advanced search capabilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- David Salon Project -->
+            <div class="col-lg-6 col-md-6 mb-4 portfolio-item web">
+              <div class="portfolio-card">
+                <div class="card-image">
+                  <img
+                    src="assets/img/david.png"
+                    alt="David Salon Project"
+                    class="img-fluid"
+                  />
+                  <div class="card-overlay">
+                    <div class="overlay-content">
+                      <h4>David Salon</h4>
+                      <p>Booking System</p>
+                      <div class="project-tags">
+                        <span class="tag">ReactJS</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MySQL</span>
+                      </div>
+                    </div>
+                    <div class="overlay-actions">
+                      <a href="salon.html" class="action-btn">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="project-category">Web Development</div>
+                  <h3 class="project-title">Online Booking System</h3>
+                  <p class="project-description">
+                    Modern appointment scheduling system with real-time
+                    availability and customer management features.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FoodTrends Project -->
+            <div class="col-lg-6 col-md-6 mb-4 portfolio-item web">
+              <div class="portfolio-card">
+                <div class="card-image">
+                  <img
+                    src="assets/img/foodtrend.png"
+                    alt="FoodTrends Project"
+                    class="img-fluid"
+                  />
+                  <div class="card-overlay">
+                    <div class="overlay-content">
+                      <h4>FoodTrends</h4>
+                      <p>Analytics Platform</p>
+                      <div class="project-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">ReactJS</span>
+                      </div>
+                    </div>
+                    <div class="overlay-actions">
+                      <a href="foodtrends.html" class="action-btn">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="project-category">Web Development</div>
+                  <h3 class="project-title">Food Trends Analytics</h3>
+                  <p class="project-description">
+                    Data-driven platform for analyzing food industry trends
+                    which helps users to explore new recipes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SoloLearn Certificates -->
+            <div class="col-lg-6 col-md-6 mb-4 portfolio-item certificate">
+              <div class="portfolio-card">
+                <div class="card-image">
+                  <img
+                    src="assets/img/solo.png"
+                    alt="SoloLearn Certificates"
+                    class="img-fluid"
+                  />
+                  <div class="card-overlay">
+                    <div class="overlay-content">
+                      <h4>SoloLearn & DICT</h4>
+                      <p>Certifications</p>
+                      <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Canva</span>
+                      </div>
+                    </div>
+                    <div class="overlay-actions">
+                      <a href="certificates.html" class="action-btn">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="project-category">Certifications</div>
+                  <h3 class="project-title">Professional Certificates</h3>
+                  <p class="project-description">
+                    Collection of programming certifications demonstrating
+                    proficiency in various technologies and frameworks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <footer class="footer" role="contentinfo">
+    <!-- ======= Enhanced Classic Footer ======= -->
+    <footer class="classic-footer" role="contentinfo">
       <div class="container">
-        <div class="row">
-          <div class="credits text-lg-end">
-          <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-      -->
-          Designed by <a href="index.html">Imee Atibagos</a>
-          <p class="m-1 text-lg-end">&copy; Copyright 2023</p>
+        <div class="footer-content">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-brand">
+                <h5 class="brand-name">Imee Atibagos</h5>
+                <p class="brand-tagline">
+                  Coding the future: Where passion fuels progress.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>imeeatibagos14@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+63 991 8820011</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-12 text-lg-end">
-          <p class="mb-1">
-            All Rights Reserved
-          </p>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-copyright">
+                <p>&copy; 2025 Imee Atibagos. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-
-   
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>

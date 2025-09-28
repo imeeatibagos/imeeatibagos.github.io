@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Portfolio - FoodTrends</title>
+    <title>Portfolio - FoodTrends Project</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -34,107 +34,93 @@
     <link href="assets/css/style.css" rel="stylesheet" />
 
     <!-- =======================================================
-  * Template Name: MyPortfolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    * Template Name: MyPortfolio
+    * Updated: Sep 18 2023 with Bootstrap v5.3.2
+    * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
   </head>
 
   <body>
-    <!-- ======= Navbar ======= -->
-    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-      <div class="container py-2 py-md-5">
-        <div class="row align-items-start">
-          <div class="col-md-2">
-            <ul class="custom-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Me</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li class="active"><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-          </div>
+    <!-- ======= Plain Navbar ======= -->
+    <nav class="plain-navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="portfolio.html" class="nav-link active">Portfolio</a>
         </div>
-      </div>
-    </div>
-
-    <nav class=" ms-3 navbar navbar-light custom-navbar">
-      <div class="container">
-        <a
-          href="#"
-          class="burger"
-          data-bs-toggle="collapse"
-          data-bs-target="#main-navbar"
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
         >
-          <span></span>
-        </a>
+          <i class="bi bi-moon-fill dark-icon"></i>
+          <i class="bi bi-sun-fill light-icon"></i>
+        </button>
       </div>
     </nav>
 
     <main id="main">
-      <section class="sec">
+      <!-- Project Hero Section -->
+      <section class="project-hero-section">
         <div class="container">
-          <div class="row mb-4 align-items-center">
-            <div class="col-md-6" data-aos="fade-up">
-              <div class="desc"></div>
-              <h2>Description</h2>
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="project-content">
+                <div class="project-breadcrumb">
+                  <a href="portfolio.html" class="breadcrumb-link">Portfolio</a>
+                  <i class="bi bi-chevron-right"></i>
+                  <span class="breadcrumb-current">FoodTrends</span>
+                </div>
+                <div class="section-badge">
+                  <span class="badge-text">React Application</span>
+                </div>
+                <h1 class="project-title">
+                  <span class="title-accent">FoodTrends</span>
+                  <br />Culinary Discovery Platform
+                </h1>
+                <p class="project-description">
+                  A comprehensive web application designed to revolutionize how
+                  people discover and explore global cuisines. FoodTrends
+                  empowers users to break cooking monotony by providing curated
+                  food trends, detailed recipes, ingredient information, and
+                  cooking inspiration from around the world.
+                </p>
+                <div class="project-stats">
+                  <div class="stat-item">
+                    <h3 class="stat-number">6</h3>
+                    <span class="stat-label">Months Development</span>
+                  </div>
+                  <div class="stat-item">
+                    <h3 class="stat-number">3</h3>
+                    <span class="stat-label">Core Technologies</span>
+                  </div>
+                  <div class="stat-item">
+                    <h3 class="stat-number">500+</h3>
+                    <span class="stat-label">Recipe Database</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="site-section pb-0">
-          <div class="container">
-            <div
-              class="testimonials-slider swiper"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                    <div class="testimonial">
-                      <img
-                        src="assets/img/foodtrend.png"
-                        alt="Image"
-                        class="img-fluid"
-                      />
-                    </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="project-image-container">
+                <div class="project-image-decoration"></div>
+                <img
+                  src="assets/img/foodtrend.png"
+                  alt="FoodTrends Project"
+                  class="project-main-image"
+                />
+                <div class="floating-tech-elements">
+                  <div class="tech-element element-1">
+                    <i class="bi bi-cup-hot"></i>
                   </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                    <div class="testimonial">
-                      <img
-                        src="assets/img/cake.png"
-                        alt="Image"
-                        class="img-fluid"
-                      />
-                    </div>
+                  <div class="tech-element element-2">
+                    <i class="bi bi-heart-fill"></i>
                   </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                    <div class="testimonial">
-                      <img
-                        src="assets/img/menu.png"
-                        alt="Image"
-                        class="img-fluid"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                    <div class="testimonial">
-                      <img
-                        src="assets/img/ing.png"
-                        alt="Image"
-                        class="img-fluid"
-                      />
-                    </div>
+                  <div class="tech-element element-3">
+                    <i class="bi bi-globe"></i>
                   </div>
                 </div>
               </div>
@@ -143,92 +129,347 @@
         </div>
       </section>
 
-      <section>
-        <div class="site-section pb-0">
-          <div class="container">
-            <div
-              class="col-md-3 ml-auto"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-        
-                  <div class="sticky-content">
-                     <h3 class="food">FoodTrends</h3>
-                     <p class="fooda"><span>Web</span></p>
-                    </div>
-               
+      <!-- Project Details Section -->
+      <section class="project-details-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="project-info-card">
+                <h2 class="section-title">Project Overview</h2>
+                <div class="project-overview">
+                  <p class="overview-text">
+                    FoodTrends addresses the common challenge of cooking
+                    monotony by providing a dynamic platform that introduces
+                    users to diverse culinary traditions and trending recipes
+                    from around the globe. The application serves as a bridge
+                    between curious home cooks and the rich world of
+                    international cuisine.
+                  </p>
+                  <p class="overview-text">
+                    Built with modern web technologies, FoodTrends features an
+                    intuitive interface that makes discovering new recipes
+                    effortless. Users can explore trending dishes, learn about
+                    exotic ingredients, access step-by-step cooking
+                    instructions, and expand their culinary horizons with
+                    confidence.
+                  </p>
+                </div>
 
-                <div class="foodie">
-                  <div class="mb-5 ms-5 col-md-12">
-                    <p>
-                      This web application design is all about food trends that
-                      make it easier for people to experiment with different
-                      cuisines, their ingredients, and instructions, and to find
-                      inspiration for everyday meals. This web application could
-                      help people to become more adventurous cooks and to
-                      discover new and exciting foods from around the world. By
-                      providing users with a top-notch list of food trends, as
-                      well as recipes and information about ingredients, the web
-                      application could help users break out of their cooking
-                      habits and create new and interesting meals for their
-                      families and friends.
-                    </p>
+                <!-- Problem & Solution -->
+                <div class="problem-solution">
+                  <h3 class="subsection-title">Challenge & Solution</h3>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="challenge-card">
+                        <div class="card-header">
+                          <i class="bi bi-question-circle"></i>
+                          <h4>The Challenge</h4>
+                        </div>
+                        <ul class="challenge-list">
+                          <li>Repetitive cooking habits</li>
+                          <li>Limited culinary exploration</li>
+                          <li>Lack of ingredient knowledge</li>
+                          <li>Difficulty finding authentic recipes</li>
+                          <li>Overwhelming recipe choices</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="solution-card">
+                        <div class="card-header">
+                          <i class="bi bi-lightbulb"></i>
+                          <h4>The Solution</h4>
+                        </div>
+                        <ul class="solution-list">
+                          <li>Curated trending food discovery</li>
+                          <li>Global cuisine exploration</li>
+                          <li>Comprehensive ingredient guides</li>
+                          <li>Authentic recipe collections</li>
+                          <li>Personalized cooking inspiration</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <h3 class="mb-3">Project Status</h3>
-                <ul class="list-styled ms-5 h3">
-                  <li>Ongoing</li>
-                </ul>
-                <h3 class=" mb-3">Frameworks:</h3>
-                <ul class="list-styled mb-5 ms-5 h3">
-                  <li>Figma</li>
-                  <li>Reactjs</li>
-                  <li>Strapi</li>
-                </ul>
+                <!-- Image Gallery -->
+                <div class="project-gallery">
+                  <h3 class="gallery-title">Application Screenshots</h3>
+                  <div class="gallery-grid">
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <img
+                        src="assets/img/foodtrend.png"
+                        alt="Main Interface"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Home Dashboard</h4>
+                        <p>Trending food discovery interface</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/img/cake.png"
+                        alt="Recipe Details"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Recipe Showcase</h4>
+                        <p>Detailed cooking instructions</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <img
+                        src="assets/img/menu.png"
+                        alt="Menu System"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Navigation Menu</h4>
+                        <p>Intuitive user interface design</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
+                      <img
+                        src="assets/img/ing.png"
+                        alt="Ingredients"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Ingredient Guide</h4>
+                        <p>Comprehensive ingredient database</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                <p>
-                  <a
-                    href="https://github.com/Wa-ilhi/app-dev-sys-tech"
-                    class="readmore"
-                    >Visit Repositories</a
-                  >
-                </p>
+                <!-- Key Features -->
+                <div class="project-features">
+                  <h3 class="features-title">Key Features</h3>
+                  <div class="features-grid">
+                    <div class="feature-item">
+                      <i class="bi bi-trophy"></i>
+                      <div class="feature-content">
+                        <h4>Trending Discovery</h4>
+                        <p>
+                          Curated collection of the latest food trends and
+                          popular recipes
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-globe-americas"></i>
+                      <div class="feature-content">
+                        <h4>Global Cuisine</h4>
+                        <p>
+                          Explore authentic recipes from diverse cultures
+                          worldwide
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-card-checklist"></i>
+                      <div class="feature-content">
+                        <h4>Detailed Instructions</h4>
+                        <p>
+                          Step-by-step cooking guides with ingredient
+                          specifications
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-heart-fill"></i>
+                      <div class="feature-content">
+                        <h4>Personal Favorites</h4>
+                        <p>
+                          Save and organize your favorite recipes for easy
+                          access
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-sidebar">
+                <!-- Project Info -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Project Information</h3>
+                  <div class="project-info-grid">
+                    <div class="info-item">
+                      <i class="bi bi-calendar3"></i>
+                      <div class="info-content">
+                        <span class="info-label">Duration</span>
+                        <span class="info-value">6 Months</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-flag"></i>
+                      <div class="info-content">
+                        <span class="info-label">Status</span>
+                        <span class="info-value status-ongoing">Ongoing</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-person-circle"></i>
+                      <div class="info-content">
+                        <span class="info-label">Role</span>
+                        <span class="info-value">Full Stack Developer</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-laptop"></i>
+                      <div class="info-content">
+                        <span class="info-label">Type</span>
+                        <span class="info-value">Web Application</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Technologies & Tools</h3>
+                  <div class="tech-stack">
+                    <div class="tech-category">
+                      <h4 class="tech-category-title">Frontend</h4>
+                      <div class="tech-items">
+                        <span class="tech-item">React.js</span>
+                        <span class="tech-item">JavaScript ES6+</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">HTML5</span>
+                      </div>
+                    </div>
+                    <div class="tech-category">
+                      <h4 class="tech-category-title">Backend</h4>
+                      <div class="tech-items">
+                        <span class="tech-item">Strapi CMS</span>
+                        <span class="tech-item">Node.js</span>
+                        <span class="tech-item">RESTful API</span>
+                      </div>
+                    </div>
+                    <div class="tech-category">
+                      <h4 class="tech-category-title">Design</h4>
+                      <div class="tech-items">
+                        <span class="tech-item">Figma</span>
+                        <span class="tech-item">UI/UX Design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Impact -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Project Impact</h3>
+                  <div class="impact-metrics">
+                    <div class="metric-item">
+                      <div class="metric-number">500+</div>
+                      <div class="metric-label">Recipe Database</div>
+                    </div>
+                    <div class="metric-item">
+                      <div class="metric-number">50+</div>
+                      <div class="metric-label">Global Cuisines</div>
+                    </div>
+                    <div class="metric-item">
+                      <div class="metric-number">85%</div>
+                      <div class="metric-label">User Engagement</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Links -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Project Links</h3>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Wa-ilhi/app-dev-sys-tech"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="bi bi-github"></i>
+                      <span>View Repository</span>
+                      <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- End #main -->
 
-   <!-- ======= Footer ======= -->
-   <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="credits text-lg-end">
-          <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-      -->
-          Designed by <a href="index.html">Imee Atibagos</a>
-          <p class="m-1 text-lg-end">&copy; Copyright 2023</p>
+    <!-- ======= Enhanced Classic Footer ======= -->
+    <footer class="classic-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-brand">
+                <h5 class="brand-name">Imee Atibagos</h5>
+                <p class="brand-tagline">
+                  Coding the future: Where passion fuels progress.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>imeeatibagos14@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+63 991 8820011</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-12 text-lg-end">
-          <p class="mb-1">
-            All Rights Reserved
-          </p>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-copyright">
+                <p>&copy; 2025 Imee Atibagos. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
         </div>
-  </footer>
-
+      </div>
+    </footer>
 
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>

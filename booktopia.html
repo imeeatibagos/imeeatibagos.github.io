@@ -1,222 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio - Booktopia Project</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Portfolio - Booktopia</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/icons8-i.gif" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/icons8-i.gif" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- =======================================================
+    * Template Name: MyPortfolio
+    * Updated: Sep 18 2023 with Bootstrap v5.3.2
+    * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
 
-  <!-- =======================================================
-  * Template Name: MyPortfolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Navbar ======= -->
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li class="active"><a href="portfolio.html">Portfolio</a></li>
-          </ul>
+  <body>
+    <!-- ======= Plain Navbar ======= -->
+    <nav class="plain-navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="portfolio.html" class="nav-link active">Portfolio</a>
         </div>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+        >
+          <i class="bi bi-moon-fill dark-icon"></i>
+          <i class="bi bi-sun-fill light-icon"></i>
+        </button>
       </div>
-    </div>
-  </div>
+    </nav>
 
-  <nav class="ms-3 navbar navbar-light custom-navbar">
-    <div class="container">
-      <a
-        href="#"
-        class="burger"
-        data-bs-toggle="collapse"
-        data-bs-target="#main-navbar"
-      >
-        <span></span>
-      </a>
-    </div>
-  </nav>
-
-  <main id="main">
-
-    <section class="sec">
-      <div class="container">
-        <div class="row mb-4 align-items-center">
-          <div class="col-md-6" data-aos="fade-up">
-            <div class="desc"></div>
-            <h2>Description</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="site-section pb-0">
+    <main id="main">
+      <!-- Project Hero Section -->
+      <section class="project-hero-section">
         <div class="container">
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial">
-                    <img
-                      src="assets/img/web1.png"
-                      alt="Image"
-                      class="img-fluid"
-                    />
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="project-content">
+                <div class="project-breadcrumb">
+                  <a href="portfolio.html" class="breadcrumb-link">Portfolio</a>
+                  <i class="bi bi-chevron-right"></i>
+                  <span class="breadcrumb-current">Booktopia</span>
+                </div>
+                <div class="section-badge">
+                  <span class="badge-text">Web Development</span>
+                </div>
+                <h1 class="project-title">
+                  <span class="title-accent">Booktopia</span>
+                  <br />Library Management System
+                </h1>
+                <p class="project-description">
+                  A comprehensive library management system designed to enhance
+                  library operations through an intuitive interface and
+                  efficient booking system. Features advanced search
+                  capabilities, room reservations, and administrative controls
+                  for optimal library management.
+                </p>
+                <div class="project-stats">
+                  <div class="stat-item">
+                    <h3 class="stat-number">4</h3>
+                    <span class="stat-label">Months Development</span>
+                  </div>
+                  <div class="stat-item">
+                    <h3 class="stat-number">3</h3>
+                    <span class="stat-label">Technologies Used</span>
+                  </div>
+                  <div class="stat-item">
+                    <h3 class="stat-number">100%</h3>
+                    <span class="stat-label">Completion Rate</span>
                   </div>
                 </div>
               </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial">
-                    <img
-                      src="assets/img/log.png"
-                      alt="Image"
-                      class="img-fluid"
-                    />
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="project-image-container">
+                <div class="project-image-decoration"></div>
+                <img
+                  src="assets/img/web1.png"
+                  alt="Booktopia Project"
+                  class="project-main-image"
+                />
+                <div class="floating-tech-elements">
+                  <div class="tech-element element-1">
+                    <i class="bi bi-code-square"></i>
                   </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial">
-                    <img
-                      src="assets/img/over.png"
-                      alt="Image"
-                      class="img-fluid"
-                    />
+                  <div class="tech-element element-2">
+                    <i class="bi bi-database-fill"></i>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial">
-                    <img
-                      src="assets/img/tran.png"
-                      alt="Image"
-                      class="img-fluid"
-                    />
+                  <div class="tech-element element-3">
+                    <i class="bi bi-palette-fill"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="site-section pb-0">
-        <div class="container">
-          <div
-            class="col-md-3 ml-auto"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-      
-                <div class="sticky-content">
-                   <h3 class="food">FoodTrends</h3>
-                   <p class="fooda"><span>Web</span></p>
-                  </div>
-             
+      </section>
 
-              <div class="foodie">
-                <div class="mb-5 ms-5 col-md-12">
-                  <p>
-                    This project aims to enhance library operations by creating an efficient and user-friendly system. It features a intuitive interface, simplifying the booking and reservation process for users. Additionally, the system offers a comprehensive book catalog, complete with search and filtering options for quick access. Users can also reserve discussion rooms, and librarians have tools to manage bookings. Furthermore, there is an administrative dashboard empowering librarians to handle check-ins, check-outs, reservations, and user accounts effectively. This project strives to benefit both librarians and users by streamlining various library activities.
+      <!-- Project Details Section -->
+      <section class="project-details-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="project-info-card">
+                <h2 class="section-title">Project Overview</h2>
+                <div class="project-overview">
+                  <p class="overview-text">
+                    Booktopia represents a modern approach to library
+                    management, addressing the challenges faced by traditional
+                    library systems. The project focuses on creating an
+                    efficient, user-friendly platform that streamlines library
+                    operations while enhancing the user experience for both
+                    librarians and patrons.
+                  </p>
+                  <p class="overview-text">
+                    The system incorporates advanced search and filtering
+                    capabilities, allowing users to quickly locate books and
+                    resources. Additionally, it features a room reservation
+                    system for discussion spaces and provides comprehensive
+                    administrative tools for managing check-ins, check-outs, and
+                    user accounts.
                   </p>
                 </div>
+
+                <!-- Image Gallery -->
+                <div class="project-gallery">
+                  <h3 class="gallery-title">Project Screenshots</h3>
+                  <div class="gallery-grid">
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <img
+                        src="assets/img/web1.png"
+                        alt="Main Interface"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Main Dashboard</h4>
+                        <p>Clean, intuitive interface design</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/img/log.png"
+                        alt="Login System"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Authentication</h4>
+                        <p>Secure login and user management</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <img
+                        src="assets/img/over.png"
+                        alt="Overview Page"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>System Overview</h4>
+                        <p>Comprehensive system analytics</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
+                      <img
+                        src="assets/img/tran.png"
+                        alt="Transaction Management"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Transaction System</h4>
+                        <p>Efficient booking management</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="project-features">
+                  <h3 class="features-title">Key Features</h3>
+                  <div class="features-grid">
+                    <div class="feature-item">
+                      <i class="bi bi-search"></i>
+                      <div class="feature-content">
+                        <h4>Advanced Search</h4>
+                        <p>
+                          Comprehensive search and filtering system for quick
+                          resource discovery
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-calendar-check"></i>
+                      <div class="feature-content">
+                        <h4>Room Reservations</h4>
+                        <p>
+                          Intuitive booking system for discussion rooms and
+                          study spaces
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-person-gear"></i>
+                      <div class="feature-content">
+                        <h4>Admin Dashboard</h4>
+                        <p>
+                          Comprehensive tools for managing users, books, and
+                          transactions
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-phone"></i>
+                      <div class="feature-content">
+                        <h4>Responsive Design</h4>
+                        <p>
+                          Optimized for all devices with mobile-first approach
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <h3 class="mb-3">Project Status</h3>
-              <ul class="list-styled ms-5 h3">
-                <li>Ongoing</li>
-              </ul>
-              <h3 class=" mb-3">Frameworks:</h3>
-              <ul class="list-styled mb-5 ms-5 h3">
-                <li>Figma</li>
-                <li>Reactjs</li>
-                <li>Strapi</li>
-              </ul>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-sidebar">
+                <!-- Project Info -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Project Information</h3>
+                  <div class="project-info-grid">
+                    <div class="info-item">
+                      <i class="bi bi-calendar3"></i>
+                      <div class="info-content">
+                        <span class="info-label">Duration</span>
+                        <span class="info-value">4 Months</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-flag"></i>
+                      <div class="info-content">
+                        <span class="info-label">Status</span>
+                        <span class="info-value status-ongoing">Ongoing</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-person-circle"></i>
+                      <div class="info-content">
+                        <span class="info-label">Role</span>
+                        <span class="info-value">Full-Stack Developer</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-building"></i>
+                      <div class="info-content">
+                        <span class="info-label">Type</span>
+                        <span class="info-value">Academic Project</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-              <p>
-                <a
-                  href="https://www.figma.com/file/YfpVISFrFoWjpmPk12bPBX/GUI?type=design&node-id=0-1&mode=design&t=lXDi5tXmvJPgD9qw-0"
-                  class="readmore"
-                  >Visit Design</a
-                >
-              </p>
+                <!-- Technologies Used -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Technologies & Tools</h3>
+                  <div class="tech-stack">
+                    <div class="tech-category">
+                      <h4 class="tech-category-title">Frontend</h4>
+                      <div class="tech-items">
+                        <span class="tech-item">React.js</span>
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">JavaScript</span>
+                      </div>
+                    </div>
+                    <div class="tech-category">
+                      <h4 class="tech-category-title">Backend</h4>
+                      <div class="tech-items">
+                        <span class="tech-item">Strapi</span>
+                        <span class="tech-item">Node.js</span>
+                      </div>
+                    </div>
+                    <div class="tech-category">
+                      <h4 class="tech-category-title">Design</h4>
+                      <div class="tech-items">
+                        <span class="tech-item">Figma</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Links -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Project Links</h3>
+                  <div class="project-links">
+                    <a
+                      href="https://www.figma.com/file/YfpVISFrFoWjpmPk12bPBX/GUI?type=design&node-id=0-1&mode=design&t=lXDi5tXmvJPgD9qw-0"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="bi bi-palette"></i>
+                      <span>View Design</span>
+                      <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======= Enhanced Classic Footer ======= -->
+    <footer class="classic-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-brand">
+                <h5 class="brand-name">Imee Atibagos</h5>
+                <p class="brand-tagline">
+                  Coding the future: Where passion fuels progress.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>imeeatibagos14@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+63 991 8820011</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-copyright">
+                <p>&copy; 2025 Imee Atibagos. All Rights Reserved.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </main><!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer class="footer" role="contentinfo">
-      <div class="container">
-        <div class="row">
-          <div class="credits text-lg-end">
-            <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-        -->
-            Designed by <a href="index.html">Imee Atibagos</a>
-            <p class="m-1 text-lg-end">&copy; Copyright 2023</p>
-          </div>
-          <div class="col-sm-12 text-lg-end">
-            <p class="mb-1">
-              All Rights Reserved
-            </p>
-          </div>
     </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

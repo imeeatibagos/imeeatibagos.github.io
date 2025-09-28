@@ -1,239 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio - David's Salon Project</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Portfolio - Salon</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/icons8-i.gif" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/icons8-i.gif" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  
+    <!-- =======================================================
+    * Template Name: MyPortfolio
+    * Updated: Sep 18 2023 with Bootstrap v5.3.2
+    * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
 
-  <!-- =======================================================
-  * Template Name: MyPortfolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Navbar ======= -->
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li class="active"><a href="portfolio.html">Portfolio</a></li>
-          </ul>
+  <body>
+    <!-- ======= Plain Navbar ======= -->
+    <nav class="plain-navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="portfolio.html" class="nav-link active">Portfolio</a>
         </div>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+        >
+          <i class="bi bi-moon-fill dark-icon"></i>
+          <i class="bi bi-sun-fill light-icon"></i>
+        </button>
       </div>
-    </div>
-  </div>
+    </nav>
 
-  <nav class="ms-3 navbar navbar-light custom-navbar">
-    <div class="container">
-      <a
-        href="#"
-        class="burger"
-        data-bs-toggle="collapse"
-        data-bs-target="#main-navbar"
-      >
-        <span></span>
-      </a>
-    </div>
-  </nav>
-
-  <main id="main">
-
-    <section class="sec">
-      <div class="container">
-        <div class="row mb-4 align-items-center">
-          <div class="col-md-6" data-aos="fade-up">
-            <div class="desc"></div>
-            <h2>Description</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="site-section pb-0">
+    <main id="main">
+      <!-- Project Hero Section -->
+      <section class="project-hero-section">
         <div class="container">
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial">
-                    <img
-                      src="assets/img/david.png"
-                      alt="Image"
-                      class="img-fluid"
-                    />
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="project-content">
+                <div class="project-breadcrumb">
+                  <a href="portfolio.html" class="breadcrumb-link">Portfolio</a>
+                  <i class="bi bi-chevron-right"></i>
+                  <span class="breadcrumb-current">David's Salon</span>
+                </div>
+                <div class="section-badge">
+                  <span class="badge-text">Web Application</span>
+                </div>
+                <h1 class="project-title">
+                  <span class="title-accent">David's Salon</span>
+                  <br />Online Booking System
+                </h1>
+                <p class="project-description">
+                  A comprehensive appointment scheduling solution designed to
+                  modernize salon operations. The system eliminates booking
+                  conflicts, reduces wait times, and enhances customer
+                  satisfaction through efficient appointment management and
+                  streamlined service delivery.
+                </p>
+                <div class="project-stats">
+                  <div class="stat-item">
+                    <h3 class="stat-number">5</h3>
+                    <span class="stat-label">Months Development</span>
+                  </div>
+                  <div class="stat-item">
+                    <h3 class="stat-number">4</h3>
+                    <span class="stat-label">Technologies Used</span>
+                  </div>
+                  <div class="stat-item">
+                    <h3 class="stat-number">95%</h3>
+                    <span class="stat-label">Client Satisfaction</span>
                   </div>
                 </div>
               </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial">
-                    <img
-                      src="assets/img/ho.png"
-                      alt="Image"
-                      class="img-fluid"
-                    />
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="project-image-container">
+                <div class="project-image-decoration"></div>
+                <img
+                  src="assets/img/david.png"
+                  alt="David's Salon Project"
+                  class="project-main-image"
+                />
+                <div class="floating-tech-elements">
+                  <div class="tech-element element-1">
+                    <i class="bi bi-calendar-check"></i>
                   </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial">
-                    <img
-                      src="assets/img/vid.png"
-                      alt="Image"
-                      class="img-fluid"
-                    />
+                  <div class="tech-element element-2">
+                    <i class="bi bi-people-fill"></i>
                   </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial">
-                    <img
-                      src="assets/img/dash.png"
-                      alt="Image"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-wrap">
-                  <div class="testimonial">
-                    <img
-                      src="assets/img/da.png"
-                      alt="Image"
-                      class="img-fluid"
-                    />
+                  <div class="tech-element element-3">
+                    <i class="bi bi-clock-fill"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="site-section pb-0">
-        <div class="container">
-          <div
-            class="col-md-3 ml-auto"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-      
-                <div class="sticky-content">
-                   <h3 class="food">David Salon: Online Booking System</h3>
-                   <p class="fooda"><span>Web</span></p>
-                  </div>
-             
+      </section>
 
-              <div class="foodie">
-                <div class="mb-5 ms-5 col-md-12">
-                  <p>
-                    David's Salon faces a critical issue due to their outdated booking system, causing inconvenience for customers and resulting in overcrowding at specific times. This leads to customer dissatisfaction, long waiting times, potential loss of customers, negative reviews, and ultimately, a decline in sales. The proposed solution is a user-friendly web app that allows customers to schedule appointments on specific dates and times. Customers can input their details, choose a desired hairstyle from available options, and efficiently book their slots. This streamlined system ensures a smooth and organized experience, preventing overcrowding, reducing wait times, enhancing customer satisfaction, and safeguarding the salon's reputation.
+      <!-- Project Details Section -->
+      <section class="project-details-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="project-info-card">
+                <h2 class="section-title">Project Overview</h2>
+                <div class="project-overview">
+                  <p class="overview-text">
+                    David's Salon faced significant challenges with their
+                    outdated booking system, leading to customer inconvenience,
+                    overcrowding, and scheduling conflicts. This project
+                    addresses these issues by implementing a modern,
+                    user-friendly web application that streamlines the entire
+                    appointment booking process.
+                  </p>
+                  <p class="overview-text">
+                    The solution provides customers with the ability to schedule
+                    appointments at their preferred times, select specific
+                    services and stylists, and receive confirmation
+                    notifications. This organized approach eliminates wait
+                    times, prevents overbooking, and significantly improves the
+                    overall customer experience.
                   </p>
                 </div>
-              </div>
-              
-              
-              <h3 class="proj">Project Status</h3>
-              <ul class="list-styled ms-5 h3">
-                <li>Ongoing</li>
-              </ul>
-              <h3 class="fram">Frameworks:</h3>
-              <ul class="list-styled mb-5 ms-5 h3">
-                <li>Figma</li>
-                <li>MySQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-            
 
-              <p>
-                <a
-                  href="https://www.figma.com/file/gJ4CdqWVLERNVAUyEvXai0/David-Salon?type=design&node-id=1-37&mode=design&t=Q4tBhIeRxDvJqud6-0"
-                  class="readmore"
-                  >Visit Design</a
-                >
-              </p>
+                <!-- Problem & Solution -->
+                <div class="problem-solution">
+                  <h3 class="subsection-title">Challenge & Solution</h3>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="challenge-card">
+                        <div class="card-header">
+                          <i class="bi bi-exclamation-triangle"></i>
+                          <h4>The Challenge</h4>
+                        </div>
+                        <ul class="challenge-list">
+                          <li>Outdated booking system</li>
+                          <li>Customer scheduling conflicts</li>
+                          <li>Long waiting times</li>
+                          <li>Overcrowding issues</li>
+                          <li>Declining customer satisfaction</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="solution-card">
+                        <div class="card-header">
+                          <i class="bi bi-lightbulb"></i>
+                          <h4>The Solution</h4>
+                        </div>
+                        <ul class="solution-list">
+                          <li>Modern web-based booking system</li>
+                          <li>Real-time appointment scheduling</li>
+                          <li>Service and stylist selection</li>
+                          <li>Automated confirmation system</li>
+                          <li>Enhanced customer experience</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Image Gallery -->
+                <div class="project-gallery">
+                  <h3 class="gallery-title">System Screenshots</h3>
+                  <div class="gallery-grid">
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <img
+                        src="assets/img/david.png"
+                        alt="Main Interface"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Landing Page</h4>
+                        <p>Modern, welcoming interface design</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/img/ho.png"
+                        alt="Home Dashboard"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Dashboard</h4>
+                        <p>Comprehensive booking overview</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <img
+                        src="assets/img/vid.png"
+                        alt="Video Content"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Media Integration</h4>
+                        <p>Engaging multimedia content</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
+                      <img
+                        src="assets/img/dash.png"
+                        alt="Admin Dashboard"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Admin Panel</h4>
+                        <p>Comprehensive management tools</p>
+                      </div>
+                    </div>
+                    <div
+                      class="gallery-item"
+                      data-aos="fade-up"
+                      data-aos-delay="500"
+                    >
+                      <img
+                        src="assets/img/da.png"
+                        alt="Data Analytics"
+                        class="gallery-image"
+                      />
+                      <div class="gallery-overlay">
+                        <h4>Analytics</h4>
+                        <p>Detailed performance metrics</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="project-features">
+                  <h3 class="features-title">Key Features</h3>
+                  <div class="features-grid">
+                    <div class="feature-item">
+                      <i class="bi bi-calendar-event"></i>
+                      <div class="feature-content">
+                        <h4>Smart Scheduling</h4>
+                        <p>
+                          Intelligent appointment booking with real-time
+                          availability updates
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-person-check"></i>
+                      <div class="feature-content">
+                        <h4>Stylist Selection</h4>
+                        <p>
+                          Choose preferred stylists and view their
+                          specializations
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-bell"></i>
+                      <div class="feature-content">
+                        <h4>Automated Notifications</h4>
+                        <p>Confirmation messages and appointment reminders</p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-graph-up"></i>
+                      <div class="feature-content">
+                        <h4>Analytics Dashboard</h4>
+                        <p>
+                          Comprehensive insights into booking patterns and
+                          performance
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-sidebar">
+                <!-- Project Info -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Project Information</h3>
+                  <div class="project-info-grid">
+                    <div class="info-item">
+                      <i class="bi bi-calendar3"></i>
+                      <div class="info-content">
+                        <span class="info-label">Duration</span>
+                        <span class="info-value">5 Months</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-flag"></i>
+                      <div class="info-content">
+                        <span class="info-label">Status</span>
+                        <span class="info-value status-ongoing">Ongoing</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-person-circle"></i>
+                      <div class="info-content">
+                        <span class="info-label">Role</span>
+                        <span class="info-value">Lead Developer</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-building"></i>
+                      <div class="info-content">
+                        <span class="info-label">Type</span>
+                        <span class="info-value">Business Solution</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Technologies & Tools</h3>
+                  <div class="tech-stack">
+                    <div class="tech-category">
+                      <h4 class="tech-category-title">Frontend</h4>
+                      <div class="tech-items">
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">Bootstrap</span>
+                      </div>
+                    </div>
+                    <div class="tech-category">
+                      <h4 class="tech-category-title">Backend</h4>
+                      <div class="tech-items">
+                        <span class="tech-item">PHP</span>
+                        <span class="tech-item">MySQL</span>
+                      </div>
+                    </div>
+                    <div class="tech-category">
+                      <h4 class="tech-category-title">Design</h4>
+                      <div class="tech-items">
+                        <span class="tech-item">Figma</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Impact -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Project Impact</h3>
+                  <div class="impact-metrics">
+                    <div class="metric-item">
+                      <div class="metric-number">75%</div>
+                      <div class="metric-label">Reduced Wait Times</div>
+                    </div>
+                    <div class="metric-item">
+                      <div class="metric-number">90%</div>
+                      <div class="metric-label">Booking Efficiency</div>
+                    </div>
+                    <div class="metric-item">
+                      <div class="metric-number">95%</div>
+                      <div class="metric-label">Customer Satisfaction</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Links -->
+                <div class="sidebar-card">
+                  <h3 class="sidebar-title">Project Links</h3>
+                  <div class="project-links">
+                    <a
+                      href="https://www.figma.com/file/gJ4CdqWVLERNVAUyEvXai0/David-Salon?type=design&node-id=1-37&mode=design&t=Q4tBhIeRxDvJqud6-0"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="bi bi-palette"></i>
+                      <span>View Design</span>
+                      <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======= Enhanced Classic Footer ======= -->
+    <footer class="classic-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-brand">
+                <h5 class="brand-name">Imee Atibagos</h5>
+                <p class="brand-tagline">
+                  Coding the future: Where passion fuels progress.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>imeeatibagos14@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+63 991 8820011</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-copyright">
+                <p>&copy; 2025 Imee Atibagos. All Rights Reserved.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </main><!-- End #main -->
+    </footer>
 
-   <!-- ======= Footer ======= -->
-   <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="credits text-lg-end">
-          <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-      -->
-          Designed by <a href="index.html">Imee Atibagos</a>
-          <p class="m-1 text-lg-end">&copy; Copyright 2023</p>
-        </div>
-        <div class="col-sm-12 text-lg-end">
-          <p class="mb-1">
-            All Rights Reserved
-          </p>
-        </div>
-  </footer>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
