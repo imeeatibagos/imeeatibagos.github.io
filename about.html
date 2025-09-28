@@ -43,215 +43,289 @@
   </head>
 
   <body>
-    <!-- ======= Navbar ======= -->
-    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-      <div class="container py-2 py-md-5">
-        <div class="row justify-content-start">
-          <div class="col-md-2">
-            <ul class="custom-menu list-unstyled">
-              <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="about.html">About Me</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-          </div>
+    <!-- ======= Plain Navbar ======= -->
+    <nav class="plain-navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About Me</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
         </div>
-      </div>
-    </div>
-
-    <nav class="ms-3 navbar navbar-light custom-navbar">
-      <div class="container">
-        <a
-          href="#"
-          class="burger"
-          data-bs-toggle="collapse"
-          data-bs-target="#main-navbar"
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
         >
-          <span></span>
-        </a>
+          <i class="bi bi-moon-fill dark-icon"></i>
+          <i class="bi bi-sun-fill light-icon"></i>
+        </button>
       </div>
     </nav>
 
     <main id="main">
-      <section class="section pb-5">
+      <!-- Hero Section with Professional Introduction -->
+      <section class="about-hero-section">
         <div class="container">
-          <div class="row mb-5 mt-5 align-items-end">
-            <div class="col-md-6" data-aos="fade-up">
-              <h2 class="abt">About Me</h2>
-              <p class="greet mb-0">
-                Greetings! I am a passionate and dedicated IT student, embarking on a journey to explore the vast 
-                and ever-evolving world of technology. With a keen interest in cutting-edge innovations and a
-                 relentless drive for learning, I am constantly seeking opportunities to expand my knowledge and
-                  skills in various IT domains. My journey in the realm of Information Technology has equipped me
-                   with a strong foundation in programming languages, networking, cybersecurity, and database management.
-                    I thrive on challenges, embracing each project as an opportunity to enhance my problem-solving 
-                    abilities and creativity. Through my ePortfolio, I aim to showcase my diverse skill set, projects,
-                     and experiences, highlighting my commitment to excellence in the IT field. Join me as I navigate 
-                     the digital landscape, aiming to make meaningful contributions and shape the future of technology.x
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
-              <h3 class="skill">Skills</h3>
-              <ul class="list-unstyled">
-                <li class="mb-3">
-                  <div class="d-flex mb-1">
-                    <strong class="frame">Figma</strong>
-                    <span class="ml-auto ms-3 mb-2">80%</span>
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="about-content">
+                <div class="section-badge">
+                  <span class="badge-text">About Me</span>
+                </div>
+                <h1 class="about-title">
+                  <span class="title-accent"> Information</span>
+                  Technology <br />
+                  <span class="title-accent">Student</span>
+                </h1>
+                <p class="about-description">
+                  With a passion for innovation and technology. Specialized in
+                  full-stack development, database management, and modern web
+                  technologies. Committed to creating efficient, scalable
+                  solutions that drive digital transformation.
+                </p>
+                <div class="about-stats">
+                  <div class="stat-item">
+                    <h3 class="stat-number">5</h3>
+                    <span class="stat-label">Projects Completed</span>
                   </div>
-                  <div class="progress custom-progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 80%"
-                      aria-valuenow="80"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
+                  <div class="stat-item">
+                    <h3 class="stat-number">2</h3>
+                    <span class="stat-label">Technologies Mastered</span>
                   </div>
-                </li>
-                <li class="mb-3">
-                  <div class="d-flex mb-1">
-                    <strong class="frame">C</strong>
-                    <span class="ml-auto ms-3 mb-2">90%</span>
+                  <div class="stat-item">
+                    <h3 class="stat-number">3+</h3>
+                    <span class="stat-label">Years Experience</span>
                   </div>
-                  <div class="progress custom-progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 90%"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </li>
-                <li class="mb-3">
-                  <div class="d-flex mb-1">
-                    <strong class="frame">MySQL</strong>
-                    <span class="ml-auto ms-3 mb-2">95%</span>
-                  </div>
-                  <div class="progress custom-progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 95%"
-                      aria-valuenow="95"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </li>
-                <li class="mb-3">
-                  <div class="d-flex mb-1">
-                    <strong class="frame">Strapi</strong>
-                    <span class="ml-auto ms-3 mb-2">90%</span>
-                  </div>
-                  <div class="progress custom-progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 90%"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </li>
-                <li class="mb-3">
-                  <div class="d-flex mb-1">
-                    <strong class="frame">HTML</strong>
-                    <span class="ml-auto ms-3 mb-2">85%</span>
-                  </div>
-                  <div class="progress custom-progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 85%"
-                      aria-valuenow="85"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </li>
-                <li class="mb-3">
-                  <div class="d-flex mb-1">
-                    <strong class="frame">Reactjs</strong>
-                    <span class="ml-auto ms-3 mb-2">70%</span>
-                  </div>
-                  <div class="progress custom-progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 70%"
-                      aria-valuenow="70"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-           
-            <div class="col-md-7 mb-5 mb-md-0" data-aos="fade-up">
-              <p>
-                <img src="assets/img/me.png" alt="Image" class="img-fluid" />
-              </p>
-              
-              <ul class="list-unstyled">
-                <li><i class="bi bi-chevron-right"></i> <strong class="line">Birthday :</strong> <span class="att">07 March 2003</span></li>
-                <br>
-                <div>
-                <li><i class="bi bi-chevron-right"></i> <strong class="line">Website :</strong> <a href="https://mee-chan.github.io/" class="att"><i><u>Click here to open</u></i></a> </li> 
-              </div>
-              <br>
-                <li><i class="bi bi-chevron-right"></i> <strong class="line">Phone :</strong> <span class="att">+63 991 8820011</span></li>
-                <br>
-                <li><i class="bi bi-chevron-right"></i> <strong class="line">Email :</strong> <span class="att">imeeatibagos14@gmail.com</span></li>
-              </ul>
-
-                <div class="col-lg-6">
-                  <ul class="list-unstyled">
-                        <li><i class="bi bi-chevron-right"></i> <strong class="line">City:</strong> <span class="att">Butuan City, Philippines</span></li>
-                          <br>
-                         <li><i class="bi bi-chevron-right"></i> <strong class="line">Age:</strong> <span class="att">20</span></li>
-                         <br>
-                  <li><i class="bi bi-chevron-right"></i> <strong class="line">Degree:</strong> <span class="att">College Undergraduate</span></li>
-                </ul>
-              </div>
+                </div>
               </div>
             </div>
-              <p><a href="https://www.dropbox.com/scl/fi/8oa3e399n6wpllm9c91nt/Curriculum-Vitae-Atibagos-1.docx?rlkey=3xymwrsg6tn0hledhsqw6wr71&dl=0" class="readmore">Download my CV</a></p>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="about-image-container">
+                <div class="image-decoration"></div>
+                <img
+                  src="assets/img/me.png"
+                  alt="Imee Atibagos"
+                  class="about-profile-image"
+                />
+                <div class="floating-elements">
+                  <div class="floating-element element-1">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+                  <div class="floating-element element-2">
+                    <i class="bi bi-database"></i>
+                  </div>
+                  <div class="floating-element element-3">
+                    <i class="bi bi-palette"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        
+
+      <!-- Professional Information Section -->
+      <section class="professional-info-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="info-card">
+                <h2 class="section-title">Professional Journey</h2>
+                <div class="journey-content">
+                  <p class="journey-text">
+                    Embarking on a transformative journey in Information
+                    Technology, I combine technical expertise with creative
+                    problem-solving to deliver innovative solutions. My academic
+                    foundation spans across multiple domains including software
+                    development, database architecture, and user experience
+                    design.
+                  </p>
+                  <p class="journey-text">
+                    With hands-on experience in modern frameworks and
+                    methodologies, I'm committed to staying at the forefront of
+                    technological advancement while maintaining a strong focus
+                    on code quality and best practices.
+                  </p>
+                </div>
+
+                <div class="personal-details">
+                  <h3 class="details-title">Contact Information</h3>
+                  <div class="details-grid">
+                    <div class="detail-item">
+                      <i class="bi bi-calendar3"></i>
+                      <div class="detail-content">
+                        <span class="detail-label">Date of Birth</span>
+                        <span class="detail-value">March 07, 2003</span>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <i class="bi bi-geo-alt"></i>
+                      <div class="detail-content">
+                        <span class="detail-label">Location</span>
+                        <span class="detail-value"
+                          >Butuan City, Philippines</span
+                        >
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <i class="bi bi-telephone"></i>
+                      <div class="detail-content">
+                        <span class="detail-label">Phone</span>
+                        <span class="detail-value">+63 991 8820011</span>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <i class="bi bi-envelope"></i>
+                      <div class="detail-content">
+                        <span class="detail-label">Email</span>
+                        <span class="detail-value"
+                          >imeeatibagos14@gmail.com</span
+                        >
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div class="detail-content">
+                        <span class="detail-label">Education</span>
+                        <span class="detail-value"
+                          >Bachelor of Science in Information Technology</span
+                        >
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <i class="bi bi-person-badge"></i>
+                      <div class="detail-content">
+                        <span class="detail-label">Age</span>
+                        <span class="detail-value">22 Years</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="skills-card">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-container">
+                  <div class="skill-item">
+                    <div class="skill-header">
+                      <span class="skill-name">MySQL</span>
+                      <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-header">
+                      <span class="skill-name">C Programming</span>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-header">
+                      <span class="skill-name">Strapi</span>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-header">
+                      <span class="skill-name">HTML/CSS</span>
+                      <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-header">
+                      <span class="skill-name">Figma</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-header">
+                      <span class="skill-name">React.js</span>
+                      <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cv-download">
+                  <a
+                    href="https://www.dropbox.com/scl/fi/8oa3e399n6wpllm9c91nt/Curriculum-Vitae-Atibagos-1.docx?rlkey=3xymwrsg6tn0hledhsqw6wr71&dl=0"
+                    class="cv-btn"
+                  >
+                    <i class="bi bi-download"></i>
+                    <span>Download Resume</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <footer class="footer" role="contentinfo">
+    <!-- ======= Enhanced Classic Footer ======= -->
+    <footer class="classic-footer" role="contentinfo">
       <div class="container">
-        <div class="row">
-          <div class="credits text-lg-end">
-            <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-        -->
-            Designed by <a href="index.html">Imee Atibagos</a>
-            <p class="m-1 text-lg-end">&copy; Copyright 2023</p>
+        <div class="footer-content">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-brand">
+                <h5 class="brand-name">Imee Atibagos</h5>
+                <p class="brand-tagline">
+                  Coding the future: Where passion fuels progress.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>imeeatibagos14@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+63 991 8820011</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-12 text-lg-end">
-            <p class="mb-1">
-              All Rights Reserved
-            </p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-copyright">
+                <p>&copy; 2025 Imee Atibagos. All Rights Reserved.</p>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
     </footer>
 
     <a
