@@ -1,94 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio - Home</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Portfolio - Home</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
+    <!-- Favicons -->
+    <link href="assets/img/icons8-i.gif" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/icons8-i.gif" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet" />
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: MyPortfolio
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
   * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
-  <!-- ======= Navbar ======= -->
-  
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-          </ul>
+  <body>
+    <!-- ======= Plain Navbar ======= -->
+    <nav class="plain-navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
         </div>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+        >
+          <i class="bi bi-moon-fill dark-icon"></i>
+          <i class="bi bi-sun-fill light-icon"></i>
+        </button>
       </div>
-    </div>
-  </div>
+    </nav>
 
+    <main id="main">
+      <!-- ======= Introduction ======= -->
 
-  <nav class="ms-3 navbar navbar-light custom-navbar">
-    <div class="container">
-     
-      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
-        <span></span>
-      </a>
-      
-    </div>
-  </nav>
-
-  
-  <main id="main">
-    <!-- ======= Introduction ======= -->
-    
       <div class="header text-center">
-
         <h1>
           <strong>IMEE ATIBAGOS</strong>
         </h1>
 
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="mr-auto"><img src="assets/img/bg-proj.jpg" alt="" class="img-fluid"></a> -->
-        <h2>Coding the future : <span>Where passion fuels progress.</span> </h2>
-      </div>
-      <div id="social-icon" class=" text-md-end mt-5 col-lg-6 text-center">
-      <div class="">
-        <a href="https://github.com/Mee-chan/imee.github.io.git"><img src="assets/img/icons8-github.gif" alt=""></a>
-        <a href="https://join.skype.com/invite/x7gJsu2yKEiI"><img src="assets/img/icons8-skype.gif" alt=""></a>
-        <a href="https://www.facebook.com/mesogabita/"><img src="assets/img/icons8-facebook.gif" alt=""></a>
-        <a href="https://www.instagram.com/mesogabita/"><img src="assets/img/icons8-insta.gif" alt=""></a>
+        <h2>Coding the future : <span id="editableText" contenteditable="true" data-placeholder="Where passion fuels progress.">Where passion fuels progress.</span><i class="bi bi-pencil-square edit-icon small" title="Click to edit"></i></h2>
 
-      </div>
-      </div>
-    </div>
+    </main>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -98,6 +84,5 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
